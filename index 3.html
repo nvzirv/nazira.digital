@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<link rel="stylesheet" href="css/styles 3.css" />
+		<script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+
+		<!-- locomotive-scroll -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+	</head>
+	<body id="js-scroll">
+		<div class="wrapper">
+			<div class="container">
+				<header>
+					<div>
+						<button class="header__button nav-btn-js" type="button"></button>
+						<nav class="header__nav nav-js" data-active="false">
+							<ul class="header__menu">
+								<li class="header__menu-item"><a href="index 2.html">Home</a></li>
+								<li class="header__menu-item"><a href="index 3.html">Projects</a></li>
+								<li class="header__menu-item"><a href="about.html">About</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+
+				<script>
+					document.addEventListener("DOMContentLoaded", () => {
+						const revealerNav = window.revealer({
+							revealElementSelector: ".nav-js",
+							options: {
+								anchorSelector: ".nav-btn-js",
+							},
+						});
+		
+						const actionBtn = document.querySelector(".nav-btn-js");
+						actionBtn.addEventListener("click", () => {
+							if (!revealerNav.isRevealed()) {
+								revealerNav.reveal();
+								actionBtn.setAttribute("data-open", true);
+							} else {
+								revealerNav.hide();
+								actionBtn.setAttribute("data-open", false);
+							}
+						});
+					});
+				</script>
+
+				<section class="project">
+					<div class="project-container">
+						<div>
+							<nav class="menu">
+								<div class="whitespace"></div>
+
+								<div class="menu__item">
+									<a class="menu__item-link" href="tulebayka.html">Tulebayka</a>
+									<img class="menu__item-img" src="images/tulebayka.png" />
+									<div class="marquee">
+										<div class="marquee__inner">
+											<span>Tulebayka</span>
+											<span>Tulebayka</span>
+											<span>Tulebayka</span>
+											<!-- <span>Tulebayka</span> -->
+										</div>
+									</div>
+								</div>
+
+								<div class="menu__item">
+									<a class="menu__item-link" href="impact.html">impact lab</a>
+									<img class="menu__item-img" src="images/impact.png" />
+									<div class="marquee">
+										<div class="marquee__inner">
+											<span>impact lab</span>
+											<span>impact lab</span>
+											<span>impact lab</span>
+											<span>impact lab</span>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="menu__item">
+									<a class="menu__item-link" href="imposter.html">imposter</a>
+									<img class="menu__item-img" src="images/imposter.png" />
+									<div class="marquee">
+										<div class="marquee__inner">
+											<span>imposter</span>
+											<span>imposter</span>
+											<span>imposter</span>
+											<span>imposter</span>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- <div class="divider"></div> -->
+
+								<div class="menu__item">
+									<a class="menu__item-link" href="tsaritsyno.html">tsaritsyno</a>
+									<img class="menu__item-img" src="images/tsaritsyno.png" />
+									<div class="marquee">
+										<div class="marquee__inner" aria-hidden="true">
+											<span>tsaritsyno</span>
+											<span>tsaritsyno</span>
+											<span>tsaritsyno</span>
+											<span>tsaritsyno</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="menu__item">
+									<a class="menu__item-link" href="posters.html">posters</a>
+									<img class="menu__item-img" src="images/oyla.png" />
+									<div class="marquee">
+										<div class="marquee__inner">
+											<span>posters</span>
+											<span>posters</span>
+											<span>posters</span>
+											<span>posters</span>
+										</div>
+									</div>
+								</div>
+								<div class="whitespace"></div>
+								<div class="whitespace"></div>
+								<div class="whitespace"></div>
+								
+							</nav>
+						</div>
+					</div>
+				</section>
+
+				<br />
+			</div>
+		</div>
+
+		<script>
+			const scroll = new LocomotiveScroll({
+				el: document.querySelector("#js-scroll"),
+				smooth: true,
+				smoothMobile: true,
+				inertia: 0.75,
+			});
+		</script>
+	</body>
+</html>
