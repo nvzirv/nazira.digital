@@ -145,6 +145,7 @@ body {
 	-webkit-transition: opacity 0.4s;
 	transition: opacity 0.4s;
 	font-family: "trapBlack";
+	/* font-weight: lighter; */
 	text-transform: uppercase;
 }
 
@@ -236,7 +237,7 @@ body {
 	white-space: nowrap;
 	font-size: 8vw;
 	padding: 1.6vw 1vw;
-	font-weight: 900;
+	/* font-weight: 900; */
 }
 
 .marquee span {
