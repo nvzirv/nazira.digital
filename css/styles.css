@@ -344,7 +344,7 @@ p.about__container-link {
     /* background: red; */
     /* width: 600px;
     height: 600px; */
-    margin: 10px auto;
+    margin: 40px auto;
 }
 
 /* @media (max-width: 500px) {
@@ -385,10 +385,9 @@ p.about__container-link {
 
 .project__image-four {
     position: relative;
-    top: -200px;
+    top: -100px;
     width: 800px;
     height: 800px;
-    /* left: -100px; */
     background: url(../images/tulebayka3.png) no-repeat 50% 50%;
     background-size: cover;
 }
