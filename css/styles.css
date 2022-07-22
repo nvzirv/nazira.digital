@@ -154,6 +154,7 @@ nav {
     margin-left: 200px;
 }
 
+
 .container__item {
     position: relative;
     width: 540px;
@@ -303,9 +304,10 @@ p.about__container-link {
     margin: 100px auto;
     /* border: 1px solid #5c5c5c; */
     color: #fff;
-    padding: 100px 40px;
+    /* padding: 100px 40px; */
     text-align: center;
 }
+
 
 .project__container-title h1{
     position: relative;
@@ -325,6 +327,12 @@ p.about__container-link {
     font-size: 16px;
 }
 
+@media (max-width: 500px) {
+    .project__container-subtitle {
+        width: 75%;
+    }  
+}
+
 .project__container-images {
     position: relative;
     width: 100%;
@@ -336,8 +344,16 @@ p.about__container-link {
     /* background: red; */
     /* width: 600px;
     height: 600px; */
-    margin: 40px auto;
+    margin: 10px auto;
 }
+
+/* @media (max-width: 500px) {
+    .project__image {
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }  
+} */
 
 .project__image-one {
     background: url(../images/tulebayka.png) no-repeat 50% 50%;
@@ -415,7 +431,7 @@ p.about__container-link {
     }
 
     .project__container {
-        width: 90%;
+        width: 100%;
     }
 
     .project__container-images {
@@ -429,7 +445,7 @@ p.about__container-link {
     }
 
     .project__image {
-        width: 80%;
+        width: 100%;
     }
 
 
