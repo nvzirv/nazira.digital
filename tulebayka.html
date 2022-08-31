@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tulebayka | Portfolio</title>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
 
     <!-- stylesheet -->
@@ -64,22 +64,26 @@
                 <h1 class="anime-js-title">Tulebayka</h1>
             </div>
             <div class="project__container-subtitle" data-scroll>
-                <p>В один из последних визитов в Алмату я стала замечать детали на которые раньше не обращала внимание. Так, я увидела на своей родной улице (Тулебаева, любя Тулебайка) орнаменты на балконах. их было много: разные формы, размеры и значение.</p>
+                <p>В один из последних визитов в Алмату я стала замечать детали на которые раньше не обращала внимание.
+                    Так, я увидела на своей родной улице (Тулебаева, любя Тулебайка) орнаменты на балконах. их было
+                    много: разные формы, размеры и значение.</p>
                 <br>
-                <p>Они вдохновили меня на создание платочков с использованием этих орнаментов и фото из Алматы. Сейчас в серии шелковые платки с  горным небом и один со спутниковыми видами на горные хребты. Коллекция пополняется. Следите за обновлениями…</p>
+                <p>Они вдохновили меня на создание платков с использованием этих орнаментов и фото из Алматы. Сейчас в
+                    серии шелковые платки с горным небом и со спутниковыми видами на горные хребты. Коллекция
+                    пополняется.</p>
             </div>
 
             <div class="project__container-images">
                 <div class="project__image project__image-one" data-scroll data-scroll-speed="1">
                 </div>
-                <div class="project__image project__image-two" data-scroll data-scroll-speed="2">
-                </div>
+                <!-- <div class="project__image project__image-two" data-scroll data-scroll-speed="2">
+                </div> -->
                 <div class="project__image project__image-three" data-scrol data-scroll-speed="4">
                 </div>
                 <div class="project__image project__image-four" data-scroll data-scroll-speed="1">
                 </div>
-                <div class="project__image project__image-five" data-scroll data-scroll-speed="4">
-                </div>
+                <!-- <div class="project__image project__image-five" data-scroll data-scroll-speed="4">
+                </div> -->
             </div>
 
             <div class="project-next-link" data-scroll>
@@ -92,13 +96,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
         // smooth scroll 
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('#js-scroll'),
-            smooth: true,
-            // smoothMobile: true,
-            inertia: 0.75
-            });
+
+        // if (document.documentElement.clientWidth > 600) {
+        //     const scroll = new LocomotiveScroll({
+        //         el: document.querySelector('#js-scroll'),
+        //         smooth: true,
+        //         smoothMobile: true,
+        //         inertia: 0.75
+        //     });
         // }
+
+        // const scroll = new LocomotiveScroll({
+        //     el: document.querySelector('#js-scroll'),
+        //     smooth: true,
+        //     smoothMobile: true,
+        //     inertia: 0.75
+        // });
 
         // project title animation 
         var textWrapper = document.querySelector('.anime-js-title');
