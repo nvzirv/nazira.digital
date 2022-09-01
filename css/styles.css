@@ -22,7 +22,7 @@ body {
 	border: 0;
 	cursor: pointer;
 	position: fixed;
-	right: 0;
+	right: 18px;
 	top: 18px;
 	margin: 20px;
 	outline: none;
@@ -34,9 +34,8 @@ body {
 @media(max-width: 400px){
     .header__button{
         position: fixed;
-        /* top: 0px;
-        right: 50px; */
-        /* backface-visibility: hidden; */
+        right: 8px;
+	    top: 8px;
     }
 }
 

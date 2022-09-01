@@ -22,7 +22,7 @@ body {
 	border: 0;
 	cursor: pointer;
 	position: fixed;
-	right: 0;
+	right: 18px;
 	top: 18px;
 	margin: 20px;
 	outline: none;
@@ -34,9 +34,8 @@ body {
 @media(max-width: 400px){
     .header__button{
         position: fixed;
-        /* top: 0px;
-        right: 50px; */
-        /* backface-visibility: hidden; */
+        right: 8px;
+	    top: 8px;
     }
 }
 
@@ -336,7 +335,7 @@ p.about__container-link {
 
 @media (max-width: 650px) {
    .project__container-images{
-       height: 1600px;
+       height: 1200px;
    } 
 }
 
@@ -350,17 +349,16 @@ p.about__container-link {
 .project__image-one {
     background: url(../images/impact1.png) no-repeat 50% 50%;
     background-size: cover;
-    top: -300px;
     width: 800px;
     height: 750px;
 }
 
 .project__image-two {
     position: relative;
-    top: -100px;
+    top: -50px;
     /* left: -260px; */
-    width: 530px;
-    height: 750px;
+    width: 750px;
+    height: 650px;
     background: url(../images/impact.png) no-repeat 50% 50%;
     background-size: cover;
 }
@@ -418,14 +416,18 @@ p.about__container-link {
     }
 
     .project__image-one{
-      top: 0px; 
-      width: 650px;
+      width: 100%;
       height: 650px;
     }
 
+    .project__image-two{
+        width: 600px;
+        height: 550px;
+    }
+
     .project__image-three{
-        top: 0px; 
-        width: 550px;
+        /* top: 200px; */
+        width: 490px;
         height: 550px;
       }
 
@@ -434,21 +436,33 @@ p.about__container-link {
 @media(max-width: 650px) {
     .project__image {
         width: 100%;
-        position: static;
+        /* position: static; */
     }
 
     .project__image-one {
-        width: 350px;
+        width: 100%;
         height: 350px;
     }
 
     .project__image-two{
-        /* width: 550px; */
-        height: 550px;
+        width: 350px;
+        height: 300px;
     }
 
     .project__image-three{
-        /* width: 500px; */
-        height: 500px;
+        width: 450px;
+        height: 490px;
+      }
+}
+
+@media(max-width: 400px){
+    .project__image-three{
+        left: -10px;
+        width: 360px;
+        height: 390px;
+      }
+
+      .project__container-images{
+          height: 1000px;
       }
 }

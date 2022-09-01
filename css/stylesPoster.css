@@ -22,13 +22,21 @@ body {
 	border: 0;
 	cursor: pointer;
 	position: absolute;
-	right: 0;
+	right: 18px;
 	top: 18px;
 	margin: 20px;
 	outline: none;
 	filter: blur(5px);
 	animation-duration: 300ms;
 	animation-timing-function: ease;
+}
+
+@media(max-width: 400px){
+    .header__button{
+        position: fixed;
+        right: 8px;
+	    top: 8px;
+    }
 }
 
 .header__menu {
@@ -298,7 +306,7 @@ p.about__container-link {
     margin: 100px auto;
     /* border: 1px solid #5c5c5c; */
     color: #fff;
-    padding: 100px 40px;
+    /* padding: 100px 40px; */
     text-align: center;
 }
 
@@ -310,14 +318,19 @@ p.about__container-link {
 }
 
 .project__container-subtitle {
-    margin: 20px 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 45%;
     font-size: 16px;
 }
+
 
 .project__container-images {
     position: relative;
     width: 100%;
-    height: 3800px;
+    height: 3000px;
     padding: 40px 0;
 }
 
@@ -407,13 +420,13 @@ p.about__container-link {
     line-height: 1em;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
     .project__container-title h1 {
-        font-size: 40px;
+        font-size: 10vw;
     }
 
     .project__container {
-        width: 80%;
+        width: 100%;
     }
 
     .project__container-images {
@@ -422,12 +435,32 @@ p.about__container-link {
     }
 
     .project__image {
-        width: 90%;
+        width: 100%;
+        position: relative;
     }
 
-    .project__image-one, .project__image-two, .project__image-three, .project__image-four {
-        position: relative;
-        top: 0;
-        left: 0;
+    .project__image-one {
+        height: 600px;
+        width: 400px;
+    }
+
+    .project__image-two {
+        height: 600px;
+        width: 400px;
+    }
+
+    .project__image-five {
+        height: 600px;
+        width: 400px;
+    }
+
+    .project__image-three {
+        height: 200px;
+        width: 400px;
+    }
+
+    .project__image-four {
+        height: 200px;
+        width: 400px;
     }
 }
