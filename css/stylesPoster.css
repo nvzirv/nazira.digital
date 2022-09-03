@@ -370,7 +370,7 @@ p.about__container-link {
 
 .project__image-four {
     position: relative;
-    top: -100px;
+    /* top: -100px; */
     width: 800px;
     height: 400px;
     /* left: -100px; */
@@ -463,4 +463,32 @@ p.about__container-link {
         height: 200px;
         width: 400px;
     }
+}
+
+@media(max-width: 400px){
+    .project__image-one {
+        height: 490px;
+        width: 320px;
+    }
+
+    .project__image-two {
+        height: 490px;
+        width: 320px;
+    }
+
+    .project__image-five {
+        height: 490px;
+        width: 320px;
+    }
+
+    .project__image-three {
+        height: 200px;
+        width: 320px;
+    }
+
+    .project__image-four {
+        height: 200px;
+        width: 320px;
+    }
+
 }
