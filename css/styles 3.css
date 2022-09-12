@@ -16,7 +16,7 @@
 html,
 body {
 	overflow-x: hidden;
-	background: #0a0a0a;
+	background: #000000;
 }
 
 .header__button {
@@ -28,13 +28,21 @@ body {
 	border: 0;
 	cursor: pointer;
 	position: absolute;
-	right: 0;
+	right: 18px;
 	top: 18px;
 	margin: 20px;
 	outline: none;
 	filter: blur(5px);
 	animation-duration: 300ms;
 	animation-timing-function: ease;
+}
+
+@media(max-width: 400px){
+    .header__button{
+        position: fixed;
+        right: 8px;
+	    top: 8px;
+    }
 }
 
 .header__menu {
@@ -145,7 +153,6 @@ body {
 	-webkit-transition: opacity 0.4s;
 	transition: opacity 0.4s;
 	font-family: "trapBlack";
-	/* font-weight: lighter; */
 	text-transform: uppercase;
 }
 
@@ -170,7 +177,7 @@ body {
 	position: absolute;
 	height: 130vh;
 	max-height: 500px;
-	max-width: 500px;
+	max-width: 100%;
 	opacity: 0;
 	left: 100%;
 	top: 10%;

@@ -119,124 +119,6 @@ h1 {
     overflow: hidden;
 }
 
-/* menu */
-nav {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-}
-
-.menu__logo, .menu__items-link {
-    padding: 40px;
-}
-
-.menu__logo a {
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.menu__items {
-    display: flex;
-}
-
-.menu__items-link a {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.menu__items-link.active a {
-    text-decoration: underline;
-}
-
-/* horizontal scroll items  */
-
-.container {
-    margin-top: 200px;
-    margin-left: 200px;
-}
-
-
-.container__item {
-    position: relative;
-    width: 540px;
-    height: 360px;
-    margin: 50px 500px 20px 80px;
-}
-
-.container__item-header h1 {
-    position: relative;
-    top: 40px;
-    left: 0;
-    right: 0;
-    width: 600px;
-    height: 360px;
-    font-size: 100px !important;
-}
-
-.container__item h1 {
-    position: absolute;
-    left: 40px;
-    bottom: -40px;
-    color: #fff;
-    font-family: "GrandSlang Roman";
-    font-weight: lighter;
-    font-size: 64px;
-}
-
-.container__item-title a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.container__item-1 {
-    background: url(../images/img-one.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.container__item-2 {
-    background: url(../images/img-two.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.container__item-3 {
-    background: url(../images/img-three.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.container__item-4 {
-    background: url(../images/img-four.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.container__item-5 {
-    background: url(../images/img-five.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-@media(max-width: 900px) {
-    .container__item {
-        width: 300px;
-        height: 200px;
-        margin: 50px 100px 20px 80px;
-    }
-
-    .container__item-header h1 {
-        font-size: 30px !important;
-        left: -50%;
-    }
-
-    .container__item h1 {
-        font-size: 40px;
-        bottom: -20px;
-    }
-}
 
 /* about page styles */
 
@@ -267,8 +149,16 @@ nav {
     color: rgb(189, 255, 185);
 }
 
+.col{
+    color: rgb(174, 202, 255);
+}
+
+.col2{
+    color: rgb(189, 255, 185);
+}
+
 .about__container-contact-link a {
-    color: #fff;
+    color: rgb(189, 255, 185);
     text-decoration: none;
 }
 
@@ -297,7 +187,12 @@ p.about__container-link {
 @media(max-width: 900px) {
     .about__container {
         width: 70%;
-        margin: 140px 0 60px 40px;
+        margin: 100px 0 60px 0px;
+    }
+
+    .about__container p {
+        font-size: 5vw;
+        font-weight: 400;
     }
 
     .cursor-follow {
@@ -305,158 +200,3 @@ p.about__container-link {
     }
 }
 
-/* project section */
-
-.project__container {
-    width: 70%;
-    margin: 100px auto;
-    /* border: 1px solid #5c5c5c; */
-    color: #fff;
-    /* padding: 100px 40px; */
-    text-align: center;
-}
-
-
-.project__container-title h1{
-    position: relative;
-    color: #fff;
-    font-family: "trapBlack";
-    font-size: 12vh;
-}
-
-.project__container-subtitle {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    width: 60%;
-    font-size: 16px;
-}
-
-/* @media (max-width: 500px) {
-    .project__container-subtitle {
-        width: 75%;
-    }  
-} */
-
-.project__container-images {
-    position: relative;
-    width: 100%;
-    height: 2600px;
-    padding: 40px 0;
-}
-
-.project__image {
-    /* background: red; */
-    /* width: 600px;
-    height: 600px; */
-    margin: 40px auto;
-}
-
-
-.project__image-one {
-    background: url(../images/tulebayka.png) no-repeat 50% 50%;
-    background-size: cover;
-    position: relative;
-    width: 800px;
-    height: 800px;
-}
-
-/* .project__image-two {
-    position: relative;
-    width: 500px;
-    height: 600px;
-    background: url(../images/tulebayka2.JPG) no-repeat 50% 50%;
-    background-size: cover;
-} */
-
-.project__image-three {
-    position: relative;
-    /* left: 300px; */
-    width: 300px;
-    height: 600px;
-    /* top: -50px; */
-    background: url(../images/tulebayka5.PNG) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.project__image-four {
-    position: relative;
-    /* top: -100px; */
-    width: 800px;
-    height: 800px;
-    background: url(../images/tulebayka3.png) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-/* .project__image-five {
-    position: relative;
-    width: 800px;
-    height: 500px;
-    background: url(../images/tulebayka4.JPG) no-repeat 50% 50%;
-    background-size: cover;
-} */
-
-.project-next-link {
-    position: relative;
-    top: -300px;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-next-link a {
-    color: rgb(189, 255, 185);
-    font-family: 'trapBlack';
-    text-decoration: none;
-    font-size: 12vh;
-}
-
-.anime-js-title .letter {
-    display: inline-block;
-    line-height: 1em;
-}
-
-@media(max-width: 1000px) {
-    .project__container-title h1 {
-        font-size: 10vw;
-    }
-
-}
-
-@media(max-width: 1000px) {
-    .project__container {
-        width: 100%;
-    }
-
-    .project__container-images {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
-    .project__image {
-        width: 100%;
-        position: relative;
-    }
-
-    .project__image-three {
-        width: 40%;
-    }
-
-
-    /* .project__image-two, .project__image-three, .project__image-four {
-        position: relative;
-    } */
-
-}
-
-@media(max-width: 600px) {
-
-    .project__image-three {
-        width: 80%;
-    }
-
-}

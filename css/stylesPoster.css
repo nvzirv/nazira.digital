@@ -466,6 +466,10 @@ p.about__container-link {
 }
 
 @media(max-width: 400px){
+    .project__container-images {
+        height: 1800px;
+    }
+
     .project__image-one {
         height: 490px;
         width: 320px;
